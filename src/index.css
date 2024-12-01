@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.line {
+  width: 4px;
+  height: 100px; /* Adjust the thickness of the line */
+  background: linear-gradient(to bottom, rgb(177, 230, 239) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.line2 {
+  width: 4px;
+  height: 500px; /* Adjust the thickness of the line */
+  background: linear-gradient(to bottom, rgb(177, 230, 239) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.cart {
+  width: 150px;
+  height: 150px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+  width: 2px;
+  height: 100px;
+  background-color: #333;
+  margin: 0 20px;
+}
