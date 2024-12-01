@@ -115,7 +115,7 @@ const Page1 = () => {
                                                 </div>
                                             </div>
                                             <div className=' relative mt-24 w-72 h-72 rounded-full shadow-2xl z-0  shadow-cyan-200 bg-cyan-400  -overflow-y-hidden '>
-                                                <img className='w-72 absolute  -top-24  ' src="man-white.png" alt="" />
+                                                <img className='w-[250px] absolute rounded-[40%] -top-24 left-3  ' src="mukesh1.png" alt="" />
                                             </div>
                                         </div>
 
@@ -124,8 +124,8 @@ const Page1 = () => {
                             </div>
                         </div>
                         <div className='flex justify-between items-center gap-24'>
-                            <div className=' relative w-72 h-72 rounded-full shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
-                                <img className='w-72 absolute  -top-24 ' src="man-white.png" alt="" />
+                            <div className=' relative w-96 h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
+                                <img className='w-80 absolute image rounded-[40%]  -top-28  left-7 ' src="mukesh1.png" alt="" />
                             </div>
                             <div className='flex flex-col gap-5 pr-4 text-white'>
                                 <IoLogoInstagram size={25} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' />

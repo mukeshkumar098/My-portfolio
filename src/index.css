@@ -13,7 +13,9 @@
   height: 500px; /* Adjust the thickness of the line */
   background: linear-gradient(to bottom, rgb(177, 230, 239) 0%, rgba(0, 0, 0, 0) 100%);
 }
-
+.image{
+  background: linear-gradient(to bottom, opacity(1) 0%, opacity(0) 100%);
+}
 
 .cart {
   width: 150px;
