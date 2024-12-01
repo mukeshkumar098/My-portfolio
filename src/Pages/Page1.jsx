@@ -53,7 +53,7 @@ const Page1 = () => {
         <>
             <div onMouseMove={(e) => {
                 mouseMoving(e)
-            }} className='h-screen px-2 py-1 bg-white flex items-center justify-center'>
+            }} className='h-screen px-2 py-1  flex items-center justify-center bg-[#0A1123] '>
  
                 <div id='tilt-in' className=" relative h-full bg-transparent w-full rounded-[20px] bg-[url('logo.jpg')] bg-[#0A1123] bg-cover bg-left bg-no-repeat ">
                   <Header/>
