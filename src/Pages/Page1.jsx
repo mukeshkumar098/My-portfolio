@@ -51,11 +51,13 @@ const Page1 = () => {
     // }[xVal, yVal])
     return (
         <>
+{/* 
+bg-[url('logo.jpg')] */}
             <div onMouseMove={(e) => {
                 mouseMoving(e)
-            }} className='h-screen px-2 py-1  flex items-center justify-center bg-[#0A1123] '>
+            }} className='h-screen px-2 py-1 bg-white flex items-center justify-center '>
  
-                <div id='tilt-in' className=" relative h-full bg-transparent w-full rounded-[20px] bg-[url('logo.jpg')] bg-[#0A1123] bg-cover bg-left bg-no-repeat ">
+                <div id='tilt-in' className=" relative h-full bg-transparent w-full rounded-[20px]  bg-[#0A1123] bg-cover bg-left bg-no-repeat ">
                   <Header/>
                     <div className='flex justify-between flex-wrap gap-24 mt-16  items-center  '>
                         <div className='pl-10 '>
