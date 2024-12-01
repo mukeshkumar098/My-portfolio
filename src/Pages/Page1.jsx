@@ -57,7 +57,7 @@ bg-[url('logo.jpg')] */}
                 mouseMoving(e)
             }} className='h-screen px-2 py-1 bg-white flex items-center justify-center '>
  
-                <div  className="  h-full bg-transparent w-full rounded-[20px] bg-[#0A1123] bg-cover bg-left bg-no-repeat ">
+                <div  className="  h-full  w-full rounded-[20px] bg-[#0A1123] bg-cover bg-left bg-no-repeat ">
                   <Header/>
                     <div className='flex justify-between flex-wrap gap-24 mt-16  items-center  '>
                         <div className='pl-10 '>
