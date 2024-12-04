@@ -61,9 +61,9 @@ bg-[url('logo.jpg')] */}
             <Header />
             <div onMouseMove={(e) => {
                 mouseMoving(e)
-            }} className=' px-2 pb-1  bg-white flex items-center justify-center  '>
+            }} className='  bg-white flex items-center justify-center  '>
 
-                <div className="h-full lg:h-screen  rounded-b-2xl w-full rounded-[0px 0px 20px] bg-[#0A1123] sm:bg-[url('logo.jpg')] lg:bg-[url('logo.jpg')] bg-cover bg-left bg-no-repeat  ">
+                <div className="h-full pb-20 w-full rounded-[0px 0px 20px] bg-black  bg-cover bg-left bg-no-repeat  ">
 
                     <div className='  lg:flex lg:justify-between lg:gap-24 lg:mt-10 lg:pt-10 '>
                         <div className='lg:pl-14 mt-10 '>
@@ -90,7 +90,7 @@ bg-[url('logo.jpg')] */}
 
                             <div className=' px-10 mt-6      '>
 
-                                <dialog id="my_modal_3" className="modal  rounded-md  bg-[rgb(10,17,30)] shadow-lg shadow-cyan-300 ">
+                                <dialog id="my_modal_3" className="modal  rounded-md  bg-black shadow-lg shadow-blue-400  ">
                                     <div className="modal-box p-6">
                                         <form method="dialog">
                                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 py-1 pr-3 text-cyan-200">✕</button>
@@ -135,7 +135,7 @@ bg-[url('logo.jpg')] */}
                             </div>
                         </div>
                         <div className='hidden lg:flex lg:justify-between justify-center  items-center lg:gap-24'>
-                            <div className=' relative mt-16 w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
+                            <div className=' relative mt-16 w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-blue-400 bg-cyan-400 -overflow-y-hidden '>
                                 <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
                             </div>
                             <div className=''>
@@ -161,6 +161,7 @@ bg-[url('logo.jpg')] */}
                 </div>
 
             </div>
+            <hr className='text-cyan-200 ' />
             <Project />
             <Contect />
 

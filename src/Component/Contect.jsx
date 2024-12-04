@@ -5,30 +5,32 @@ import { IoLogoInstagram } from 'react-icons/io5'
 import { IoPerson } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlineMessage } from "react-icons/md";
-
+import { motion, px } from 'framer-motion';
 
 
 const Contect = () => {
     return (
-        <section className='px-2 mt-1  flex justify-center items-center w-full  '>
-            <div className='bg-[#0A1123] w-full rounded-[20px] pb-8'>
+        <section className=' flex justify-center items-center w-full  '>
+        
+            <div className='bg-black w-full  pb-8'>
 
-
+          
                 <div className='text-white flex justify-center'>
-       
+                    
                     <div className='flex flex-col justify-center items-center'>
-                        <div>  <span ><FaLongArrowAltDown className='relative top-[-38px] z-10' size={25} color='white' /></span></div>
-                        <h1 className='relative bg-[#0A1123] mt-[-50px] py-2 px-5 border-2 border-cyan-200 rounded-[10px] text-xl font-bold text-cyan-200'>
+                      
+                        <h1 className='relative bg-[#0A1123]  py-2 px-5 border-2 border-cyan-200 rounded-[10px] text-xl font-bold text-cyan-200'>
                             Let's Connect
                         </h1>
                         <span ><FaLongArrowAltDown className='relative top-[-11px]' size={25} color='white' /></span>
                     </div>
-                </div>
-                <div className='flex justify-around   flex-wrap py-2 px-5'>
+                </div>  
+                <motion.div initial={{ opacity: 0, y: 110 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1.5 }}>
+                <div className='flex justify-around pt-14   flex-wrap py-2 px-5'>
                     <div>
                         <img src="MERN.webp" alt="" />
                     </div>
-                    <form className='flex  flex-col justify-center items-center'>
+                    <form className='flex mb-20 flex-col justify-center items-center'>
                         <div className='relative'>
                             <h3 className='text-sm  text-white  mb-0.5'>Name</h3>
         
@@ -50,6 +52,8 @@ const Contect = () => {
                         </div>
                     </form>
                 </div>
+                </motion.div>
+                <motion.div initial={{ opacity: 0, y: 110 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1.5 }}>
                 <div className='flex justify-center'>
                     <div className='flex flex-col text-white justify-center items-center '>
                         <div>
@@ -66,6 +70,8 @@ const Contect = () => {
                         </div>
                     </div>
                 </div>
+                </motion.div>
+             
             </div>
         </section>
     )
