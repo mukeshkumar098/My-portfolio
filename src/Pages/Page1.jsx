@@ -31,57 +31,65 @@ const Page1 = () => {
         return () => clearInterval(interval); // Clean up the interval on component unmount
     }, []);
 
-    // const tiltRef = useRef(null)
-    // const [xVal, setXVal] = useState(0)
-    // const [yVal, setYVal] = useState(0)
-    // const mouseMoving = (e) => {
-    //     setXVal((e.clientX - tiltRef.current.getBoundingClientRect().x - tiltRef.current.getBoundingClientRect().width / 2) / 20);
-    //     setYVal(-(e.clientY - tiltRef.current.getBoundingClientRect().y - tiltRef.current.getBoundingClientRect().height / 2) / 20);
+    const tiltRef = useRef(null)
+    const [xVal, setXVal] = useState(0)
+    const [yVal, setYVal] = useState(0)
+    const mouseMoving = (e) => {
+        setXVal((e.clientX - tiltRef.current.getBoundingClientRect().x - tiltRef.current.getBoundingClientRect().width / 2) / 20);
+        setYVal(-(e.clientY - tiltRef.current.getBoundingClientRect().y - tiltRef.current.getBoundingClientRect().height / 2) / 20);
 
-    //     tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`
-    //     console.log(tiltRef.current.getBoundingClientRect());
+        tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`
+        console.log(tiltRef.current.getBoundingClientRect());
 
-    // }
-    // useGSAP(function () {
-    //     gsap.to(tiltRef.current, {
-    //         transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
-    //         duration: 3,
-    //         ease: `elastic.out(1,0,2)`
-    //     })
-    // }[xVal, yVal])
+    }
+    useGSAP(function () {
+        gsap.to(tiltRef.current, {
+            transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
+            duration: 3,
+            ease: `elastic.out(1,0,2)`
+        })
+    }[xVal, yVal])
+
+
+
+
     return (
         <>
-{/* 
+            {/* 
 bg-[url('logo.jpg')] */}
-{/* // bg-cover bg-left bg-no-repeat  */}
+            {/* // bg-cover bg-left bg-no-repeat  */}
+            <Header />
             <div onMouseMove={(e) => {
                 mouseMoving(e)
-            }} className='h-screen px-2 py-1 bg-white flex items-center justify-center  '>
- 
-                <div  className="  h-full  w-full rounded-[20px] bg-[#0A1123] bg-[url('logo.jpg')] bg-cover bg-left bg-no-repeat  ">
-                  <Header/>
-                    <div className='flex justify-between flex-wrap gap-24 mt-16  items-center  '>
-                        <div className='pl-10 '>
+            }} className=' px-2 pb-1  bg-white flex items-center justify-center  '>
+
+                <div className="h-full lg:h-screen  rounded-b-2xl w-full rounded-[0px 0px 20px] bg-[#0A1123] sm:bg-[url('logo.jpg')] lg:bg-[url('logo.jpg')] bg-cover bg-left bg-no-repeat  ">
+
+                    <div className='  lg:flex lg:justify-between lg:gap-24 lg:mt-10 lg:pt-10 '>
+                        <div className='lg:pl-14 mt-10 '>
                             <div id='tilt-div' >
-                                <div className='flex gap-5 justify-start'>
+                                <div className='flex gap-4 justify-start '>
                                     <div className='flex flex-col items-center'>
                                         <div className='w-4 h-4 bg-cyan-200 rounded-full'></div>
                                         <div className="line"></div>
-                                    </div>
-                                    <div>
+                                    </div><div>
+                                        <div ref={tiltRef} className='tilt '>
 
-                                        <h1 className='text-4xl font-serif text-white font-bold'>I am <span className='text-4xl  font-serif text-indigo-400'>{text}</span></h1>
-                                        <h1 className='font-bold text-white text-[2.6vw]'>FULL-STACK DEVELOPER</h1>
+                                            <h1 className='text-6xl font-serif text-white font-bold'>I am <span className='text-5xl  font-serif text-cyan-400'>MUKESH KUMAR</span></h1>
+                                            <h1 className='font-bold text-white text-[2.6vw]'>FULL-STACK DEVELOPER</h1>
+                                        </div>
+                                        <div className='flex items-center py-8 '>
+                                            <button className="btn relative font-sans px-6 py-2 bg-cyan-600 shadow-lg  hover:bg-cyan-400  rounded-xl font-bold text-white text-[17px]" onClick={() => document.getElementById('my_modal_3').showModal()}>About me</button>
+                                            <span><FaLongArrowAltRight className='relative left-[-13px]' size={25} color='white' />
+                                            </span>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
                             <div className=' px-10 mt-6      '>
-                                <div className='flex items-center'>
-                                    <button className="btn relative font-sans px-4 py-2 bg-cyan-600 shadow-lg shadow-cyan-300  hover:bg-cyan-400  rounded-xl font-bold text-white text-[17px]" onClick={() => document.getElementById('my_modal_3').showModal()}>About me</button>
-                                    <span><FaLongArrowAltRight className='relative left-[-13px]' size={25} color='white' />
-                                    </span>
-                                </div>
+
                                 <dialog id="my_modal_3" className="modal  rounded-md  bg-[rgb(10,17,30)] shadow-lg shadow-cyan-300 ">
                                     <div className="modal-box p-6">
                                         <form method="dialog">
@@ -126,24 +134,36 @@ bg-[url('logo.jpg')] */}
                                 </dialog>
                             </div>
                         </div>
-                        <div className='flex justify-between items-center gap-24'>
-                            <div className=' relative w-96 h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
-                                <img className='w-80 absolute image rounded-[40%]  -top-28  left-7 ' src="mukesh1.png" alt="" />
+                        <div className='hidden lg:flex lg:justify-between justify-center  items-center lg:gap-24'>
+                            <div className=' relative mt-16 w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
+                                <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
                             </div>
-                            <div className='flex flex-col gap-5 pr-4 text-white'>
-                                <IoLogoInstagram size={25} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' />
-                                <FaTwitter size={25} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' />
-                                <FaLinkedinIn size={25} className='shadow-lg hover:text-cyan-200  bg-transparent text-cyan-200  ' />
-                                <FaGithub size={25} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' />
+                            <div className=''>
+                                <ul className=' hidden lg:flex lg:flex-col lg:gap-5 lg:pr-4 lg:text-white'>
+
+                                    <li><a href="">  <IoLogoInstagram size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' /></a></li>
+                                    <li><a href="">  <FaTwitter size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' /></a></li>
+                                    <li><a href=""> <FaLinkedinIn size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' /></a></li>
+                                    <li><a href=""><FaGithub size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' /></a></li>
+                                </ul>
+
+
+
+
+                            </div>
+                        </div>
+                        <div className='lg:hidden mt-24 pb-14 flex justify-center  items-center lg:gap-24'>
+                            <div className=' relative w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
+                                <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
-             
+
             </div>
-            <Project/>
-            <Contect/>
-          
+            <Project />
+            <Contect />
+
         </>
     )
 }
