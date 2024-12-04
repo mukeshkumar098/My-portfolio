@@ -34,19 +34,19 @@ const Contect = () => {
                         <div className='relative'>
                             <h3 className='text-sm  text-white  mb-0.5'>Name</h3>
         
-                            <input className='text-sm  border-cyan-200  text-white bg-slate-500   py-2 px-7 w-80 lg:w-[400px]  rounded outline-none bg-transparent placeholder:text-gray-500   border-2 mb-4 ' type="text" placeholder='Enter your name' />
-                            <IoPerson  className='absolute text-slate-500  text-[17px] ml-2  top-8' />
+                            <input className='text-sm  border-cyan-200  text-white !bg-slate-800   py-3 px-7 w-80 lg:w-[400px]  rounded outline-none bg-transparent placeholder:text-gray-200   border-2 mb-4 ' type="text" placeholder='Enter your name' />
+                            <IoPerson  className='absolute text-slate-200  text-[17px] ml-2  top-8' />
                         </div>
                         <div className='relative'>
                             <h3 className='text-sm  text-white  mb-0.5'>Your Email</h3>
-                            <input className='text-sm border-cyan-200  text-white bg-slate-500  py-2 px-8 w-80  lg:w-[400px] rounded outline-none placeholder:text-gray-500  bg-transparent border-2 mb-4 ' type="text" placeholder='Enter your Email' />
-                            <MdOutlineMailOutline  className='absolute text-slate-500  text-[19px] ml-2  top-[33px]' />
+                            <input className='text-sm border-cyan-200  text-white !bg-slate-800  py-3 px-8 w-80  lg:w-[400px] rounded outline-none placeholder:text-gray-200  bg-transparent border-2 mb-4 ' type="text" placeholder='Enter your Email' />
+                            <MdOutlineMailOutline  className='absolute text-slate-200  text-[19px] ml-2  top-[33px]' />
                         </div>
 
                         <div className=' w-80 relative lg:w-[400px] flex flex-col items-start '>
                             <h3 className='text-sm   text-white  mb-0.5'>Message</h3>
-                            <textarea className='w-full h-36 border-cyan-200  text-white bg-slate-500  text-sn py-2 px-7 rounded outline-none bg-transparent border-2  mb-4 ' name="" id="" cols='30' rows='10' placeholder='Hi...'></textarea>
-                            <MdOutlineMessage  className='absolute text-slate-500  text-[17px] ml-2  top-9' />
+                            <textarea className='w-full h-36 border-cyan-200  text-white !bg-slate-800 placeholder:text-gray-200  text-sn py-2 px-7 rounded outline-none bg-transparent border-2  mb-4 ' name="" id="" cols='30' rows='10' placeholder='Hi...'></textarea>
+                            <MdOutlineMessage  className='absolute text-slate-200  text-[17px] ml-2  top-9' />
                             <button className=' py-3 px-5 font-semibold bg-cyan-600 shadow-lg   hover:bg-cyan-400  rounded text-sm text-white mt-4 w-full'>SEND</button>
 
                         </div>
