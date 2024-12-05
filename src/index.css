@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.tilt{
+/* .tilt{
   width: fit-content;
   transform: rotateX(10deg);
-}
+} */
 
 .line {
   width: 4px;
