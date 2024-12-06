@@ -149,10 +149,10 @@ bg-[url('logo.jpg')] */}
                             <div className=''>
                                 <ul className=' hidden lg:flex lg:flex-col lg:gap-5 lg:pr-4 lg:text-white'>
 
-                                    <li><a href="">  <IoLogoInstagram size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' /></a></li>
+                                    <li><a href="https://www.instagram.com/_darksoullll_/" target='_black'>  <IoLogoInstagram size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' /></a></li>
                                     <li><a href="">  <FaTwitter size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' /></a></li>
-                                    <li><a href=""> <FaLinkedinIn size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' /></a></li>
-                                    <li><a href=""><FaGithub size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' /></a></li>
+                                    <li><a href="https://www.linkedin.com/in/mukesh-kumar-71bb01265/" target='_black'> <FaLinkedinIn size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200  ' /></a></li>
+                                    <li><a href="https://github.com/mukeshkumar098" target='_black'><FaGithub size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' /></a></li>
                                 </ul>
 
 

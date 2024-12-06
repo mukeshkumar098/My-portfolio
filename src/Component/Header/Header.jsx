@@ -33,12 +33,12 @@ const Header = ({onButtonClick}) => {
             <div className=''>
             <FaBars onClick={()=>setBar(!bar)} size={40} className='block text-white p-2 z-10   sm:hidden ' />
             {bar && <div className='sm:hidden absolute  text-white right-4  top-20'>
-              <div className='w-52 px-6 py-2 bg-black shadow-lg shadow-cyan-200 -950 rounded-lg'>
-               <div onClick={()=>setBar(!bar)} className='text-white flex justify-end'><ImCross size={12}/></div>
-                <ul className='flex flex-col gap-4 pb-10 '>
-                  <li className='flex items-center gap-2'><IoPerson/><p>About</p></li>
-                  <li className='flex items-center gap-2'><FaPhoneAlt/><p>Contect</p></li>
-                  <li className='flex items-center gap-2'><AiFillProject/><p>Project</p></li>
+              <div className='w-52 px-10 py-2 bg-black shadow-lg shadow-cyan-200 -950 rounded-lg'>
+               <div onClick={()=>setBar(!bar)} className='text-white  flex justify-end'><ImCross size={12}/></div>
+                <ul className='flex flex-col gap-8 pb-10 '>
+                  <li className='flex items-center text-xl gap-2'><IoPerson size={20}/><p>About</p></li>
+                  <li className='flex items-center text-xl gap-2'><FaPhoneAlt size={20}/><p>Contect</p></li>
+                  <li className='flex items-center text-xl gap-2'><AiFillProject size={20}/><p>Project</p></li>
                 </ul>
               </div>
             </div>}
