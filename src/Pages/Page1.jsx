@@ -85,8 +85,8 @@ bg-[url('logo.jpg')] */}
                                                 <h1 className='text-6xl font-serif text-white font-bold'>I am <span className='text-5xl  font-serif text-cyan-400'>MUKESH KUMAR</span></h1>
                                                 <h1 className='font-bold text-white text-[2.6vw]'>FULL-STACK DEVELOPER</h1>
                                                 <div className='flex gap-1 items-center text-white '>
-                                                    <MdOutlineMailOutline className='lg:mt-1 lg:size-4 sm:size-1' />
-                                                    <p className='font-semibold text-white text-[1.2vw]'>mukeshkemar567@gmail.com</p>
+                                                    <MdOutlineMailOutline className='sm:hidden hidden lg:block lg:mt-1 lg:size-4 sm:size-1' />
+                                                    <p className='sm:hidden hidden lg:block font-semibold text-white text-[1.2vw]'>mukeshkemar567@gmail.com</p>
                                                 </div>
                                             </div>
                                             <div className='hidden lg:flex lg:items-center lg:py-8 '>
@@ -94,8 +94,8 @@ bg-[url('logo.jpg')] */}
                                                 {/* <span><FaLongArrowAltRight className=' lg:left-[-13px]' size={25} color='white' />
                                                 </span> */}
                                             </div>
-                                            <div className='pt-5'>
-                                                <a href="#about-me"><button className=" font-sans px-6 py-2 bg-cyan-600 shadow-lg  hover:bg-cyan-900  rounded-xl font-bold text-white text-[17px]">About me</button></a>
+                                            <div className='lg:hidden pt-5'>
+                                                <a href="#about-me"><button className=" font-sans px-6 py-2 border-2 border-cyan-200 bg-[#0A1123] shadow-lg  hover:bg-cyan-900  rounded-xl font-bold text-cyan-200 text-[17px]">About me</button></a>
                                             </div>
                                         </div>
 
@@ -112,23 +112,23 @@ bg-[url('logo.jpg')] */}
                                             <div className='flex justify-between  '>
                                                 <div>
                                                     <div className='py-5 px-8  w-[500px] '>
-                                                        <h1 className='font-bold text-xl text-cyan-300'>ABOUT ME</h1>
-                                                        <p className='pt-4 text-cyan-500'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</p>
+                                                        <h1 className='font-bold text-2xl text-cyan-300'>ABOUT ME</h1>
+                                                        <p className='pt-4 text-lg text-cyan-500'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</p>
                                                     </div>
                                                     <div className='px-8 w-[500px] '>
-                                                        <div className='flex flex-wrap items-center gap-3 text-[15px] text-cyan-400 '>
-                                                            <p className='p-2  rounded-full border border-cyan-200'>javaScript</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>C</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>C++</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>Python</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>HTML</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>CSS</p>
-                                                            <p className='p-2  rounded-full border-2 border-cyan-200'>javaScript</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>react</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>Bootstrap</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>Tailwind CSS</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>jQuery</p>
-                                                            <p className='p-2 rounded-full border-2 border-cyan-200'>Java</p>
+                                                        <div className='flex flex-wrap items-center gap-3 text-[15px] text-cyan-500 '>
+                                                            <p className='p-2 px-3  rounded-lg border border-cyan-200'>javaScript</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>C</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>C++</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>Python</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>HTML</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>CSS</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>javaScript</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>react</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>Bootstrap</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>Tailwind CSS</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>jQuery</p>
+                                                            <p className='p-2 px-3 rounded-lg border-2 border-cyan-200'>Java</p>
                                                         </div>border-cyan-200                                       </div>
                                                     <div className='py-5 px-8 '>
                                                         <h1 className='font-bold text-xl text-cyan-200 '>MERN STACK</h1>
@@ -185,7 +185,7 @@ bg-[url('logo.jpg')] */}
                         </div>
                         <div className=''>
                         <h1 className='text-cyan-400 font-bold text-xl'>Skills</h1>
-                        <ul className='w-80 gap-4 mt-2 flex flex-wrap   text-white'>
+                        <ul className='w-80 gap-4 mt-2 flex flex-wrap   text-cyan-500'>
                                 <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C</li>
                                 <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C++</li>
                                 <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Python</li>
