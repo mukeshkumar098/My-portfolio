@@ -36,12 +36,12 @@ const Contect = () => {
                                 <h3 className='text-sm  text-white  mb-0.5'>Name</h3>
 
                                 <input className='text-sm  border-cyan-200  text-white !bg-slate-800   py-3 px-7 w-80 lg:w-[400px]  rounded outline-none bg-transparent placeholder:text-gray-200   border-2 mb-4 ' type="text" placeholder='Enter your name' />
-                                <IoPerson className='absolute text-slate-200  text-[17px] ml-2  top-8' />
+                                <IoPerson className='absolute text-slate-200  text-[17px] ml-2  top-9' />
                             </div>
                             <div className='relative'>
                                 <h3 className='text-sm  text-white  mb-0.5'>Your Email</h3>
                                 <input className='text-sm border-cyan-200  text-white !bg-slate-800  py-3 px-8 w-80  lg:w-[400px] rounded outline-none placeholder:text-gray-200  bg-transparent border-2 mb-4 ' type="text" placeholder='Enter your Email' />
-                                <MdOutlineMailOutline className='absolute text-slate-200  text-[19px] ml-2  top-[33px]' />
+                                <MdOutlineMailOutline className='absolute text-slate-200  text-[19px] ml-2  top-[37px]' />
                             </div>
 
                             <div className=' w-80 relative lg:w-[400px] flex flex-col items-start '>

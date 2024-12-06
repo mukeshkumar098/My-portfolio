@@ -114,7 +114,7 @@ const Project = () => {
                                                         
                                                        
                                                         <div className='h-[2px] -left-[70px] right-44  bg-cyan-200 absolute top-1/2 z-0'></div>
-                                                        <div className='w-8 h-8 border-2 p-1 border-cyan-200 bg-[#0A1123] bg-[url("walmart.webp")] rounded-full -left-[27%] top-[41%] absolute z-10 '><img src="Walmart-Logo.png" className='z-10 ' alt="" /></div>
+                                                        <div className='w-8 h-8 border-2 p-1 border-cyan-200 bg-[#0A1123] bg-[url("walmart.webp")] rounded-full -left-[26%] top-[41%] absolute z-10 '><img src="Walmart-Logo.png" className='z-10 ' alt="" /></div>
                                                         <img className='absolute w-[238px] h-[148px] top-[20px] z-20 left-7 ' src="lep2.png" alt="" />
                                                     </div>
                                                     </div>
@@ -144,7 +144,7 @@ const Project = () => {
                                                     </div>
                                                     <div className='h-[2px] -left-16 right-44  bg-cyan-200 absolute top-1/2 z-0'></div>
                                                     
-                                                <div className='w-8 h-8 border-2 p-1 border-cyan-200 bg-[#0A1123] bg-[url("walmart.webp")] rounded-full -left-[27%] top-[41%] absolute z-10 '><a href="https://chat-app-ai-mk.onrender.com"><img className='rounded-full' src="logos.jpg" alt="" /></a></div>
+                                                <div className='w-8 h-8 border-2 p-1 border-cyan-200 bg-[#0A1123] bg-[url("walmart.webp")] rounded-full -left-[26%] top-[41%] absolute z-10 '><a href="https://chat-app-ai-mk.onrender.com"><img className='rounded-full' src="logos.jpg" alt="" /></a></div>
                                              
                                                 </div>
                                             </a>
@@ -160,9 +160,9 @@ const Project = () => {
 
                                     </div>
                                     <div className='flex z-0 flex-col items-center justify-center mt-10'>
-                                        <div className='w-5 h-5 bg-cyan-200 rounded-full absolute top-0 bottom-0 -left-2 '></div>
-                                        <div className='w-[2px] bg-cyan-200 absolute top-0 bottom-0 left-0 z-0 '></div>
-                                        <div className='w-10 h-[2px] bg-cyan-200 rounded-full absolute  bottom-0 -left-4 '></div>
+                                        <div className='w-5 h-5 bg-cyan-200 rounded-full absolute -top-1 bottom-0 -left-[4.5px] '></div>
+                                        <div className='w-[2px] bg-cyan-200 absolute top-0 bottom-0 left-1 z-0 '></div>
+                                        <div className='w-10 h-[2px] bg-cyan-200 rounded-full absolute  bottom-0 -left-3 '></div>
                                     </div>
                                 </div>
                             </div>
