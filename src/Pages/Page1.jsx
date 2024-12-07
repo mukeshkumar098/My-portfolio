@@ -15,7 +15,7 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 
 
 const Page1 = () => {
-   
+
     const [text, setText] = useState(""); // Holds the animated sentence text
     const sentence = "Muukesh Kumar ";
 
@@ -23,8 +23,8 @@ const Page1 = () => {
         let index = 0;
         const interval = setInterval(() => {
             setText((prev) => prev + sentence[index]);
-            index +=1;
-            if (index === sentence.length-1) {
+            index += 1;
+            if (index === sentence.length - 1) {
                 clearInterval(interval); // Stop when the sentence is completed
             }
         }, 200); // Adjust speed of typing (100ms per character)
@@ -36,7 +36,7 @@ const Page1 = () => {
             {/* 
 bg-[url('logo.jpg')] */}
             {/* // bg-cover bg-left bg-no-repeat  */}
-            <Header  />
+            <Header />
             <div onMouseMove={(e) => {
                 mouseMoving(e)
             }} className='  bg-white flex items-center justify-center  '>
@@ -144,16 +144,19 @@ bg-[url('logo.jpg')] */}
                         </div>
                     </div>
 
-                    <div id='about-me' className='  lg:hidden flex  justify-center  items-center'>
+                    <div id='about-me' className='w-full  lg:hidden flex  justify-center  items-center'>
                         <div className=' mt-24 pb-14  gap-10 flex flex-col   justify-center  items-center lg:gap-24'>
                             <div className=' relative w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
                                 <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
                             </div>
-                            <div className='w-80 sm:w-[70vw] text-cyan-500  flex justify-center items-center'>
-                                <div>
-                                    <h1 className='text-cyan-400 font-bold '>ABOUT ME</h1>
-                                    <h1 className='pt-2'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</h1>
-                                </div>
+                            <div className='w-100 sm:w-[70vw] text-cyan-500 '>
+                                <div className=''>
+                                    <h1 className='text-cyan-400 text-xl font-bold px-0 '>ABOUT ME</h1>
+                                    <div className=''>
+
+                                        <h1 className=' w-[80vw]'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</h1>
+
+                                    </div></div>
                             </div>
                             <div className=''>
                                 <h1 className='text-cyan-400 font-bold text-xl'>Skills</h1>
@@ -169,6 +172,9 @@ bg-[url('logo.jpg')] */}
                                     <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Tailwind CSS</li>
 
                                 </ul>
+                            </div>
+                            <div className='flex justify-center'>
+                                <img className='w-44' src="mernp.png" alt="" />
                             </div>
                         </div>
 

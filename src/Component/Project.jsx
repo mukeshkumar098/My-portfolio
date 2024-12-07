@@ -110,7 +110,7 @@ const Project = () => {
                                                         <span className='flex group-hover:-top-12 ease-jump   duration-200 bg-[#fc815c] px-5 absolute top-5 left-1/2 -translate-x-1/2 py-2 rounded w-max items-center after:content-[""] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 '>
                                                             walmart
                                                         </span><div className='relative'>
-                                                        <img src="walmart.webp" className='relative w-72 z-10 shadow-2xl shadow-blue-500/50' alt="" />
+                                                        <img src="walmart.webp" className='rounded-lg relative w-72 z-10 shadow-2xl shadow-blue-500/50' alt="" />
                                                         
                                                        
                                                         <div className='h-[2px] -left-[70px] right-44  bg-cyan-200 absolute top-1/2 z-0'></div>
@@ -139,7 +139,7 @@ const Project = () => {
                                                     <span className='flex group-hover:-top-12 ease-jump   duration-200 bg-blue-700 px-5 absolute top-5 left-1/2 -translate-x-1/2 py-2 rounded w-max items-center after:content-[""] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 '>
                                                         ChatMk
                                                     </span><div className='relative w-72'>
-                                                    <img src="walmart.webp" className='relative w-72 z-10 shadow-2xl shadow-blue-500/50' alt="" />
+                                                    <img src="walmart.webp" className='rounded-lg relative w-72 z-10 shadow-2xl shadow-blue-500/50' alt="" />
                                                     <img className='absolute w-[238px] h-[148px] top-[20px] z-20 left-7 ' src="lep1.png" alt="" />
                                                     </div>
                                                     <div className='h-[2px] -left-16 right-44  bg-cyan-200 absolute top-1/2 z-0'></div>
