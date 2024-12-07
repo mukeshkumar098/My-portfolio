@@ -146,36 +146,46 @@ bg-[url('logo.jpg')] */}
 
                     <div id='about-me' className='w-full  lg:hidden flex  justify-center  items-center'>
                         <div className=' mt-24 pb-14  gap-10 flex flex-col   justify-center  items-center lg:gap-24'>
-                            <div className=' relative w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
-                                <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
-                            </div>
+                            <motion.div initial={{ opacity: 0, y: 110 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1.5 }}>
+                                <div className=' relative w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
+                                    <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
+                                </div>
+                            </motion.div>
+
                             <div className='w-100 sm:w-[70vw] text-cyan-500 '>
-                                <div className=''>
-                                    <h1 className='text-cyan-400 text-xl font-bold px-0 '>ABOUT ME</h1>
+                                <motion.div initial={{ opacity: 0, y: 110 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1.5 }}>
                                     <div className=''>
+                                        <h1 className='text-cyan-400 text-xl font-bold px-0 '>ABOUT ME</h1>
+                                        <div className=''>
 
-                                        <h1 className=' w-[80vw]'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</h1>
+                                            <h1 className=' w-[80vw]'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</h1>
 
-                                    </div></div>
+                                        </div></div>
+                                </motion.div>
                             </div>
-                            <div className=''>
-                                <h1 className='text-cyan-400 font-bold text-xl'>Skills</h1>
-                                <ul className='w-80 sm:w-[70vw] gap-4 mt-2 flex flex-wrap   text-cyan-500'>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C++</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Python</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>HTML5</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>CSS</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>JavaScript</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Java</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Bootstrap</li>
-                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Tailwind CSS</li>
 
-                                </ul>
-                            </div>
-                            <div className='flex justify-center'>
-                                <img className='w-44' src="mernp.png" alt="" />
-                            </div>
+                            <motion.div initial={{ opacity: 0, y: 110 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1.5 }}>
+                                <div className=''>
+                                    <h1 className='text-cyan-400 font-bold text-xl'>Skills</h1>
+                                    <ul className='w-80 sm:w-[70vw] gap-4 mt-2 flex flex-wrap   text-cyan-500'>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C++</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Python</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>HTML5</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>CSS</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>JavaScript</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Java</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Bootstrap</li>
+                                        <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Tailwind CSS</li>
+
+                                    </ul>
+                                </div>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 110 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1.5 }}>
+                                <div className='flex justify-center'>
+                                    <img className='w-44' src="mernp.png" alt="" />
+                                </div>
+                            </motion.div>
                         </div>
 
                     </div>

@@ -34,7 +34,7 @@ const Header = () => {
             <FaBars onClick={()=>setBar(!bar)} size={40} className='block text-white p-2 z-10   sm:hidden ' />
             {bar && <div className='sm:hidden absolute  text-white right-4  top-20'>
               <div className='w-52  bg-black shadow-lg shadow-cyan-200 -950 rounded-lg'>
-               <div onClick={()=>setBar(!bar)} className='text-white  flex px-5 py-1 justify-end'><ImCross size={12}/></div>
+               <div onClick={()=>setBar(!bar)} className='text-white  flex px-5 py-1 justify-end'><ImCross size={17}/></div>
                 <ul className='flex  py-2 px-10 flex-col gap-8 pb-10 '>
                   <li className='flex items-center text-xl gap-2'><IoPerson size={20}/><p>About</p></li>
                   <li className='flex items-center text-xl gap-2'><FaPhoneAlt size={20}/><p>Contect</p></li>

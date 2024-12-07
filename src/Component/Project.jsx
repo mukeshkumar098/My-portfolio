@@ -61,14 +61,11 @@ const Project = () => {
                                         <div className=' flex lg:w-96 sm:w-60'>
                                             <a href="https://chat-app-ai-mk.onrender.com">
                                                 <div className=' relative group hover:scale-105 ease-in-out duration-100'>
-
                                                     <span className='flex group-hover:-top-12 ease-jump   duration-200 bg-blue-700 px-5 absolute top-5 left-1/2 -translate-x-1/2 py-2 rounded w-max items-center after:content-[""] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 '>
                                                         ChatMk
                                                     </span>
                                                     <div className='relative'>
-
-                                            
-                                                    <img src="walmart.webp" className='relative  shadow-[0px_20px_50px_rgba(59,130,246,0.8)]' alt="" />
+                                                    <img src="walmart.webp" className='relative rounded-xl  shadow-[0px_20px_50px_rgba(59,130,246,0.8)]' alt="" />
                                                     <img className='absolute lg:w-[314px] sm:w-[197px] sm:h-[126px] sm:top-[15px] sm:left-[23px] lg:h-[200px] lg:top-[24px] z-20 lg:left-[38px] ' src="lep1.png" alt="" />
                                                     </div>
                                                 </div>
