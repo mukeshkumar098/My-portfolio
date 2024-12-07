@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import TitleText from '../Component/TitleText'
-import { useGSAP } from '@gsap/react'
+
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
@@ -16,11 +15,7 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 
 
 const Page1 = () => {
-    const aboutSectionRef = useRef(null);
-
-    const handleScrollToAbout = () => {
-        aboutSectionRef.current.scrollIntoView({ behavior: "smooth" });
-    };
+   
     const [text, setText] = useState(""); // Holds the animated sentence text
     const sentence = "Muukesh Kumar ";
 
@@ -28,43 +23,20 @@ const Page1 = () => {
         let index = 0;
         const interval = setInterval(() => {
             setText((prev) => prev + sentence[index]);
-            index += 1;
-            if (index === sentence.length - 1) {
+            index +=1;
+            if (index === sentence.length-1) {
                 clearInterval(interval); // Stop when the sentence is completed
             }
-        }, 100); // Adjust speed of typing (100ms per character)
+        }, 200); // Adjust speed of typing (100ms per character)
 
         return () => clearInterval(interval); // Clean up the interval on component unmount
     }, []);
-
-    const tiltRef = useRef(null)
-    const [xVal, setXVal] = useState(0)
-    const [yVal, setYVal] = useState(0)
-    const mouseMoving = (e) => {
-        setXVal((e.clientX - tiltRef.current.getBoundingClientRect().x - tiltRef.current.getBoundingClientRect().width / 2) / 20);
-        setYVal(-(e.clientY - tiltRef.current.getBoundingClientRect().y - tiltRef.current.getBoundingClientRect().height / 2) / 20);
-
-        tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`
-        console.log(tiltRef.current.getBoundingClientRect());
-
-    }
-    useGSAP(function () {
-        gsap.to(tiltRef.current, {
-            transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
-            duration: 3,
-            ease: `elastic.out(1,0,2)`
-        })
-    }[xVal, yVal])
-
-
-
-
     return (
         <>
             {/* 
 bg-[url('logo.jpg')] */}
             {/* // bg-cover bg-left bg-no-repeat  */}
-            <Header onButtonClick={handleScrollToAbout} />
+            <Header  />
             <div onMouseMove={(e) => {
                 mouseMoving(e)
             }} className='  bg-white flex items-center justify-center  '>
@@ -82,7 +54,7 @@ bg-[url('logo.jpg')] */}
                                         </div><div>
                                             <div className='tilt '>
 
-                                                <h1 className='text-6xl font-serif text-white font-bold'>I am <span className='text-5xl  font-serif text-cyan-400'>MUKESH KUMAR</span></h1>
+                                                <h1 className='text-6xl font-serif text-white font-bold'>I am <span className='text-5xl  font-serif text-cyan-400'>{text}</span></h1>
                                                 <h1 className='font-bold text-white text-[2.6vw]'>FULL-STACK DEVELOPER</h1>
                                                 <div className='flex gap-1 items-center text-white '>
                                                     <MdOutlineMailOutline className='sm:hidden hidden lg:block lg:mt-1 lg:size-4 sm:size-1' />
@@ -163,7 +135,7 @@ bg-[url('logo.jpg')] */}
                                         <li><a href="https://github.com/mukeshkumar098" target='_black'><FaGithub size={30} className='shadow-lg hover:text-cyan-400  bg-transparent text-cyan-200 ' /></a></li>
                                     </ul>
 
-                                   
+
 
 
                                 </div>
@@ -171,37 +143,37 @@ bg-[url('logo.jpg')] */}
 
                         </div>
                     </div>
-                    
+
                     <div id='about-me' className='  lg:hidden flex  justify-center  items-center'>
                         <div className=' mt-24 pb-14  gap-10 flex flex-col   justify-center  items-center lg:gap-24'>
                             <div className=' relative w-72 h-72 lg:w-96 lg:h-96 rounded-[50%] shadow-2xl z-0  shadow-cyan-200 bg-cyan-400 -overflow-y-hidden '>
                                 <img className='w-60 lg:w-80 absolute image rounded-[40%] -top-[77px] lg:-top-28  left-7 ' src="mukesh1.png" alt="" />
                             </div>
-                            <div className='w-80 text-cyan-500  flex justify-center items-center'>
-                            <div>
-                            <h1 className='text-cyan-400 font-bold '>ABOUT ME</h1>
-                            <h1 className='pt-2'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</h1>
+                            <div className='w-80 sm:w-[70vw] text-cyan-500  flex justify-center items-center'>
+                                <div>
+                                    <h1 className='text-cyan-400 font-bold '>ABOUT ME</h1>
+                                    <h1 className='pt-2'>I am a dedicated and versatile full-stack developer with a passion for building end-to-end web solutions. Skilled in creating responsive front-end interfaces and efficient back-end systems, I specialize in delivering robust, scalable, and user-friendly applications.</h1>
+                                </div>
                             </div>
-                        </div>
-                        <div className=''>
-                        <h1 className='text-cyan-400 font-bold text-xl'>Skills</h1>
-                        <ul className='w-80 gap-4 mt-2 flex flex-wrap   text-cyan-500'>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C++</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Python</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>HTML5</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>CSS</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>JavaScript</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Java</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Bootstrap</li>
-                                <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Tailwind CSS</li>
+                            <div className=''>
+                                <h1 className='text-cyan-400 font-bold text-xl'>Skills</h1>
+                                <ul className='w-80 sm:w-[70vw] gap-4 mt-2 flex flex-wrap   text-cyan-500'>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>C++</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Python</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>HTML5</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>CSS</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>JavaScript</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Java</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Bootstrap</li>
+                                    <li className='px-3 py-2 rounded-lg border-2 border-cyan-200 '>Tailwind CSS</li>
 
-                            </ul>
+                                </ul>
                             </div>
                         </div>
-                        
+
                     </div>
-{/*                   
+                    {/*                   
                     <div className='h-screen w-full lg:hidden text-white flex justify-center -top-8'>
                         <div className='flex flex-col justify-center pt-4 items-center'>
                             <h1 className='bg-[rgb(10,17,35)] py-2 px-5 border-2 border-cyan-200 rounded-[10px] text-xl font-bold text-cyan-200'>Skils</h1>
@@ -228,7 +200,7 @@ bg-[url('logo.jpg')] */}
             </div>
             <hr className='text-cyan-200 ms:mx-8' />
             <Project />
-            <Contect ref={aboutSectionRef} />
+            <Contect />
 
         </>
     )

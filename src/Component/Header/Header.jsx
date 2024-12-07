@@ -10,7 +10,7 @@ import Contect from '../Contect';
 import { ImCross } from "react-icons/im";
 
 
-const Header = ({onButtonClick}) => {
+const Header = () => {
 
   const [bar, setBar] = useState(false)
  
@@ -23,7 +23,7 @@ const Header = ({onButtonClick}) => {
 
           <div className=' w-full z-10 flex justify-end items-center gap-2 p-5'>
               <ul className='hidden sm:blok sm:flex justify-between text-white gap-6 mr-4'>
-                <li onClick={onButtonClick}  className='hover:text-cyan-200 cursor-pointer'>About </li>
+                <li  className='hover:text-cyan-200 cursor-pointer'>About </li>
                 <li className='hover:text-cyan-200 cursor-pointer'>Contect</li>
                 <li className='hover:text-cyan-200 cursor-pointer'>Project</li>
               </ul>
